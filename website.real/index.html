@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/master.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<div class="intro">
+	<h1 style="font-size:5vw">disha mankodi</h1> 
+</div>
+
+<div class="next">
+	<h1 style="font-size:4vw">engineer | innovator</h1>
+</div>
+
+<div class="nav">
+	<a class="a active" href="#">home</a>
+	<a class="b" href="#">about me</a>
+	<a class="c" href="#">my work</a>
+	<a class="d" href="#">connect</a>
+
+</div>
+
+<div class="content">
+
+	<div class="home">	
+		<img src="images/two.jpg" class="pic1">
+	</div>
+	
+	<div class="aboutme">
+		<p class="aboutmetitle">
+			<b>About Me</b><br>
+		</p>
+		<p class="first">
+			Hi! I am happy that you have somehow found yourself on my page. Now that you are here, let me tell you a little about myself. <br><br>
+
+			I study biomedical engineering at the University of Connecticut and hope to apply the skills I am learning to one day innovate the next great medical device and combat important public health issues. Until then, I want to challenge myself to pick up new projects, jobs, and further studies to give me the experience necessary to accompish my goals.<br><br>
+		</p>
+		<p class="second">
+			Some other super cool facts:<br><br>
+
+			I sing in a Bollywood fusion a cappella group,<br>I follow a lot of NPR podcasts on Spotify, mostly Planet Money,<br>I listen to a variety of pop and indie music,<br>I enjoy making lists in my journal to organize my life,<br>I make websites about myself in my free time.<br>Well, I guess that's a good start.<br><br>
+			On this website, you will find my past projects, my current work and, of course, my resume. <br><br>
+			Hope you enjoy learning about what I do! 
+		</p>
+
+	</div>
+
+	<div class="mywork">
+		
+		<p class="pasttitle">	
+			<b>Past Projects</b><br>
+		</p>
+		<p class="past">
+			During my internship at Potentiometric Probes, I designed an imaging system that minimized the cost of fluorescence imaging. After conducting many experiments to troubleshoot and compare the mean signal and background voltages of different detection systems, I synchroinzed a low-cost camera and single pixel detector to optimize resolution and speed of the produced image.<br><br>
+			In Gyor, Hungary, I collaborated with Hungarian students during the Entrepreneurship Leadership Academy to develop a prototype and business model for NicoTeam, a nicotine monitoring toothbrush. This was an awesome exerpeince because it opened my eyes to global healthcare and entrepreneurship, and it let me travel around Hungary! 
+			</p>
+		<p class="currentitle">
+			<b>Current Projects</b><br>
+		</p>
+		<p class="current">
+			I am working on my senior design project, which involves creating a human study inducing cognitive load on subjects in order to ultimately correlate facial and vocal patterns with levels of cognitive load. This project is sponsored by the Navy, and I am excited to analyze our results next semester. 
+			
+		</p>
+	</div>
+
+	<div class="connect">
+		<p class="social">
+			<a href="https://www.linkedin.com/in/disha-mankodi/" target="_blank"><i class="fa fa-linkedin" style="color: black"></i></a>
+			<a href="https://www.instagram.com/dish.please/" target="_blank"><i class="fa fa-instagram"style="color: black"></i></a>
+			<a href="mailto:disha.mankodi@uconn.edu"style="color: black"><i class="fa fa-envelope"></i></a>
+		</p>
+		<p class="resume">	
+			<a href="Website Resume.pdf"style="color: black"download>download resume
+		</p>
+		
+	</div>
+
+</div>
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">	
+
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert("i clicked this");
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutme = $('.aboutme'),
+		$mywork = $('.mywork'),
+		$connect = $('.connect');
+
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutme.fadeOut();
+			$mywork.fadeOut();
+			$connect.fadeOut();
+		});
+		$b.click(function(){
+			$home.fadeOut();
+			$aboutme.fadeIn();
+			$mywork.fadeOut();
+			$connect.fadeOut();
+		});
+		$c.click(function(){
+			$home.fadeOut();
+			$aboutme.fadeOut();
+			$mywork.fadeIn();
+			$connect.fadeOut();
+		});
+		$d.click(function(){
+			$home.fadeOut();
+			$aboutme.fadeOut();
+			$mywork.fadeOut();
+			$connect.fadeIn();
+		});
+
+	});
+
+</script>
+</body>
+</html>

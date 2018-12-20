@@ -1,0 +1,146 @@
+body, html{
+	height: 100%;
+	background: linear-gradient(90deg, #008080 50%, #f8f8ff 50%);
+	font-family: "Arial", monospace;
+	background-repeat: no-repeat;
+}
+
+.intro{
+	text-align: left;
+	color: white;
+	letter-spacing: 3px;
+	margin: 0% 11%;	
+}
+
+.next{
+	text-align: right;
+	position: absolute; bottom: 2px;
+	margin-left: 50%;
+	letter-spacing: 2px;
+}
+
+.nav{
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 20%;
+	margin-left: 75%;
+}
+
+.nav a{
+	text-decoration: none;
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+	height: 70px;
+	margin: 5px 0;
+	float: right;
+	background-color: black;
+	line-height: 90px;
+	text-align: center;
+	display: inline-block;
+	transition: 300ms;
+}
+
+a.active, .nav a:hover{
+	background-color: rgb(0,128,128);
+	color: black;
+	width: 100%;
+}
+.a{
+	width: 95%;
+}
+.b{
+	width: 85%;
+}
+.c{
+	width: 80%;
+}
+.d{
+	width: 90%;
+}
+
+.content{
+	
+
+}
+.home .pic1{
+	margin-left: 37%;
+	width: auto;
+	height: 350px;
+}
+
+.aboutme {
+	width: 47%;
+	left: 20px;
+	position: absolute;
+	top: 135px;
+	display: none;
+}
+.aboutme .first{
+	color: white;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 15px;
+
+}
+.aboutme .second{
+	color: white;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 15px;
+
+}
+
+.aboutme .aboutmetitle{
+	color: black;
+	font-size: 25px;
+	line-height: 20px;
+	margin-bottom: 15px;
+
+}
+.mywork{
+	width: 47%;
+	display: none;
+	left: 20px;
+	position: absolute;
+	top: 135px;
+	display: none;
+}
+
+.mywork .pasttitle{
+	color: black;
+	font-size: 25px;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+
+.mywork .past{
+	color: white;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+.mywork .currentitle{
+	color: black;
+	font-size: 25px;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+.mywork .current{
+	color: white;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+.connect{
+	display: none;
+	margin-left: 50px;
+}
+.social{
+	font-size: 150px;
+}
+.resume{
+	font-size: 40px;
+}
+
